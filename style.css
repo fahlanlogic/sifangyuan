@@ -10,7 +10,7 @@ body {
 
 nav {
 	text-align: center;
-	background-color: #467854;
+	background: linear-gradient(#467854, #336348);
 }
 
 nav ul {
@@ -92,7 +92,7 @@ article#bbq {
 }
 
 #menu-category {
-	background: #336348;
+	background: radial-gradient(circle at top left, #467854, #336348);
 }
 
 #menu-category h1 {
