@@ -39,6 +39,7 @@ li a:hover {
 
 article#steamed-dimsum {
 	background: url('img/bg-dimsum-crystal.jpg');
+	background-size: cover;
 	height: 562px;
 	display: flex;
 	align-items: center;
@@ -77,6 +78,7 @@ a.button-menu-lainnya {
 
 article#bbq {
 	background: url('img/bg-ayam-bakar.jpg');
+	background-size: cover;
 	height: 562px;
 	display: flex;
 	align-items: center;
