@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,500;0,600;0,800;1,300;1,600;1,800&display=swap');
+*{
+	font-family: 'Nunito', sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+}
+
+main h2, main h3, footer h5, h5.card-title {
+	font-weight: 800;
+}
+
+nav {
+	position: relative;
+	text-align: center;
+	background: url('../img/bg-1.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 15px 30px;
+}
+
+li a {
+	padding: 3px 20px 3px;
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+}
+
+li a:hover {
+	border-radius: 5px;
+	background-color: white;
+	color: #336348;
+	font-weight: 800;
+}
+
+article#steamed-dimsum {
+	background: url('../img/bg-dimsum-crystal.jpg');
+	background-repeat: no-repeat;
+	background-position: right;
+	height: 562px;
+	display: flex;
+	align-items: center;
+}
+
+img.dimsum, img.bbq {
+	display: none;
+}
+
+#steamed-dimsum p, h2, #bbq p, h2 {
+	margin: 0;
+}
+
+.content-steamed-dimsum {
+	position: relative;
+	text-align: center;
+	width: 45%;
+	color: #336348;
+	left: 100px;
+}
+
+p.description-category {
+	padding: 30px 0px;
+	text-align: left;
+}
+
+a.button-menu-lainnya {
+	text-decoration: none;
+	color: #336348;
+	font-weight: 800;
+	border: 2px solid #336348;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+
+.content-bbq a:hover, .content-steamed-dimsum a:hover {
+	background-color: #336348;
+	color: white;
+}
+
+article#bbq {
+	background: url('../img/bg-ayam-bakar.jpg');
+	background-repeat: no-repeat;
+	background-position: left;
+	height: 562px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.content-bbq {
+	position: relative;
+	text-align: center;
+	width: 38%;
+	color: #336348;
+	right: 100px;
+}
+
+#menu-category {
+	background: url('../img/bg-2.png');
+	background-size: cover;
+	background-position: center;
+}
+
+#menu-category h3 {
+	text-align: center;
+	color: white;
+	padding-top: 30px;
+	font-weight: 800;
+}
+
+.container-menu-category {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	text-align: center;
+}
+
+.container-menu-category .card {
+	margin: 2.5em;
+	width: 18rem; 
+	background-color: #336348; 
+	border: 0; 
+	box-shadow: 1px 1px 5px #222322;
+}
+
+.container-menu-category p {
+	margin: 0;
+	padding: 5px 0px 9px;
+}
+
+.container-menu-category img {
+	width: 380px;
+}
+
+.link-menu-category {
+	margin: 15px;
+}
+
+.link-menu-category a {
+	text-decoration: none;
+	color: white;
+}
+
+.link-menu-category a:hover {
+	font-weight: 800;
+	color: white;
+}
+
+.card a {
+	background-color: white; color: #336348; border: 0; font-weight: 700;
+}
+
+.card a:hover {
+	color: white;
+	font-weight: 800;
+	background-color: #336348;
+}
+
+#about-us {
+	background: url('../img/buah-campur.jpg');
+	background-repeat: no-repeat;
+	background-position: left;
+	height: 562px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.info-about-us {
+	margin-right: 10%;
+	color: #336348;
+}
+
+.info-about-us a {
+	text-decoration: none;
+	color: #336348;
+	font-weight: 800;
+}
+
+.info-about-us p {
+	margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+	header, main {
+		width: 100%;
+	}
+	nav ul li {
+		padding: 15px 5px;
+	}
+	nav {
+		height: 250px;
+	}
+	article#steamed-dimsum, article#bbq {
+		justify-content: center;
+		background: white;
+		height: 47em;
+	}
+
+	p.description-category {
+		padding-top: 0;
+	}
+	.content-steamed-dimsum, .content-bbq {
+		width: 80%;
+		left: 0;
+	}
+	.steamed-dimsum p {
+		line-height: 1.2em;
+	}
+	img.dimsum, img.bbq {
+		display: block;
+	}
+	.container-menu-category .card {
+		width: 80%;
+		margin: 2em;
+	}
+	#about-us {
+		background: white;
+		height: 0;
+		width: 80%;
+		margin: auto;
+		flex-wrap: wrap;
+	}
+	.info-about-us {
+		margin-right: 0;
+		margin-top: 15px;
+	}
+}
